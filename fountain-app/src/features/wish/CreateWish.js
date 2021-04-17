@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 
 import "../../css/wish.css";
 
-export default function CreateWish({ }) {
+export default function CreateWish(){
   const [_wish, updateWish] = useState("");
 
   const onChangeHandler = (e) => {

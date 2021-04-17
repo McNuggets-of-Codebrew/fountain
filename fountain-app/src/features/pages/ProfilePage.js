@@ -6,8 +6,10 @@ export default function ProfilePage() {
     return(
         <div>
             <TopNav/>
-            Profile
+            <div className = "profile-container">
+            <div className="heading">PROFILE</div>
             <Profile profile={dummyProfile}/>
+            </div>
         </div>
     )
 }

@@ -1,9 +1,8 @@
-import Landing from "../pages/Landing"; 
-import About from "../pages/About"; 
 import ProfilePage from "../pages/ProfilePage"; 
 import EditWish from "../wish/EditWish"; 
 import CreateWish from "../wish/CreateWish"; 
 import Fountain from "../pages/Fountain"; 
+import Dashboard from "../pages/Dashboard"; 
 
 import {dummyWish} from "../wish/dummyWish"; 
 export const publicRoutes = [
@@ -12,11 +11,6 @@ export const publicRoutes = [
         exact: true,
         page: <Fountain/>,
     },
-    {
-        path: "/about",
-        exact: true,
-        page: <About/>
-    }, 
     {
         path: "/profile",
         exact: true,
@@ -31,5 +25,10 @@ export const publicRoutes = [
         path: "/test2", 
         exact: true, 
         page: <CreateWish/>
+    }, 
+    {
+        path: "/dashboard", 
+        exact: true, 
+        page: <Dashboard/>
     }
 ];

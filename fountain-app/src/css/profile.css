@@ -1,3 +1,32 @@
+@font-face{
+    font-family: 'JosefinRegular';
+    src: url("../assets/Josefin.ttf") format("truetype");
+} 
+
+.profile-container{ 
+    width: 40%; 
+    margin: auto;
+    margin-top: 1%; 
+    background-image: linear-gradient(#acbde8, #738bc9);
+    border-radius: 25px;
+    padding: 2%; 
+}
 .profile{ 
-    padding: 4%; 
+    padding-top: 2%; 
+    padding-left: 4%; 
+    padding-right: 4%; 
+    padding-bottom: 2%; 
+    margin: 2%;
+    margin-top: 0% !important;    
+    color: white;   
+}
+
+.heading{ 
+    font-family: 'JosefinRegular';
+    padding-top: 2%; 
+    padding-left: 4%; 
+    margin: 2%; 
+    margin-bottom: 0% !important; 
+    font-size: x-large; 
+    color: white; 
 }

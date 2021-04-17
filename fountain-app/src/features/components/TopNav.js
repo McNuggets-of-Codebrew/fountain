@@ -12,11 +12,7 @@ export default function TopNav(){
             </div>
             <div className = "signup-button">
             <LoginButton/>
-            </div>     
-            <div className = "right">
-                <Link to="/about" className="link">About</Link>
             </div>            
-       
         </div>
     )
 }   

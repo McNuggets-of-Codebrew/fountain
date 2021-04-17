@@ -27,12 +27,14 @@
 }
 
 .about{ 
-    background-image: linear-gradient(#ebf4fc   , #bddfff, #0451b5, #10366b);
+    background-image: linear-gradient(#edf4ff, #6096fd, #031b88);
     margin: 2%; 
     width: 46%; 
     height: 100%; 
     float: right; 
     border-radius: 25px 65px;
+    align-content: center;
+    text-align: center; 
 }
 
 .about .header{ 
@@ -40,7 +42,8 @@
     color: white; 
     font-size: x-large;
     margin: auto; 
-    padding-left: 40%; 
+    text-align: center; 
+    align-content: center;
     text-transform: capitalize;
 }
 
@@ -48,13 +51,14 @@
     font-family: "Josefin";
     color: white; 
     margin: auto; 
-    padding-left: 10%; 
+    text-align: center; 
+    align-content: center; 
     padding-top: 5%;
     padding-bottom: 10%; 
 }
 
 .about .image{ 
+    text-align: center; 
     width: 40%; 
-    margin-left: 30%; 
-    margin-right: 10%; 
+    align-content: center;
 }
