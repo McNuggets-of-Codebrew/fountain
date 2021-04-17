@@ -1,5 +1,5 @@
 import ProfilePage from "../pages/ProfilePage"; 
-import EditWish from "../wish/EditWish"; 
+import EditWish from "../wish/editWish"; 
 import CreateWish from "../wish/CreateWish"; 
 import Fountain from "../pages/Fountain"; 
 import Dashboard from "../pages/Dashboard"; 
