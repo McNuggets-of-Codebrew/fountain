@@ -7,7 +7,7 @@ export default function Landing() {
     return(
         <div>
             <TopNav/>
-            {dummyWish.map((wish, index)=><Wish wish = {wish}/>)}
+            {dummyWish.map((wish, index)=><div><Wish wish = {wish} key={index}/></div>)}
         </div>
     )
 }

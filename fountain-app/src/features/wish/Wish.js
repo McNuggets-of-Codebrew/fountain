@@ -4,23 +4,23 @@ import Button from 'react-bootstrap/Button';
 
 export default function Wish({wish}){
     return(
-        <div class = "wish">
-            <div class = "title">
+        <div className = "wish">
+            <div className = "title">
                 {wish.title}
             </div>
             <hr/>
-            <div class = "subtitle">
+            <div className = "subtitle">
                 {wish.location}
             </div>
-            <div class="subtitle">
+            <div className ="subtitle">
             {wish.poster}, ${wish.cost}
             </div>
             <br/>
-            <div class = "description">
+            <div className = "description">
                 {wish.description}
             </div>
             <br/>
-            <div class = "button">
+            <div className = "button">
             {wish.type === "grant" && <div> <Button variant="primary"> Grant Wish </Button> <Button variant="primary"> Donate </Button> </div>}
             {wish.type === "offer" && <Button variant="primary"> Contact </Button>}
             </div>

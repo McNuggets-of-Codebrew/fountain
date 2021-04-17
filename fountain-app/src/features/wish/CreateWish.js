@@ -4,8 +4,8 @@ import Button from "react-bootstrap/Button";
 
 import "../../css/wish.css";
 
-export default function EditWish({ wish }) {
-  const [_wish, updateWish] = useState(wish);
+export default function CreateWish({ }) {
+  const [_wish, updateWish] = useState("");
 
   const onChangeHandler = (e) => {
     updateWish({ ..._wish, [e.target.id]: e.target.value });
@@ -13,10 +13,6 @@ export default function EditWish({ wish }) {
 
   const onSaveHandler = () => {
     //Some other API call here
-  };
-
-  const onResetHandler = () => {
-      updateWish(wish); 
   };
 
   return (
@@ -58,12 +54,8 @@ export default function EditWish({ wish }) {
       </Form>
       <Button variant="primary" onClick={onSaveHandler}>
         {" "}
-        Save Changes{" "}
+        Create{" "}
       </Button>{" "}
-      <Button variant="primary" onClick={onResetHandler}>
-        {" "}
-        Reset{" "}
-      </Button>
     </div>
   );
 }

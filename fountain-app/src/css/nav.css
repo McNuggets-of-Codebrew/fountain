@@ -1,3 +1,8 @@
+@font-face{
+    font-family: 'Josefin';
+    src: url("../assets/JosefinLight.ttf") format("truetype");
+} 
+
 a {
     color: white;
 }
@@ -11,6 +16,7 @@ a {
     margin: 0;  
     padding: 1%; 
     background: #10366b; 
+    z-index: 999; 
 }
 
 .top-nav .logo{ 
@@ -19,6 +25,8 @@ a {
 }
 
 .top-nav .left{
+    font-family: "Josefin";
+    font-size: larger;
     float: left;
     margin-left: 1%; 
     margin-top: 1%;   

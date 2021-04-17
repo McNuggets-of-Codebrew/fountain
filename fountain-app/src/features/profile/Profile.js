@@ -6,7 +6,7 @@ import "../../css/profile.css";
 export default function ProfileDetails({ profile }) {
   const [_profile, updateProfile] = useState(profile);
 
-  const saveHandler = () => { 
+  const onSaveHandler = () => { 
       //API call to update profile details 
   }; 
 
@@ -48,12 +48,12 @@ export default function ProfileDetails({ profile }) {
         <Form.Label>Phone</Form.Label>
         <Form.Control
           as="textarea"
-          rows="1"
+          rows = "1"
           value={_profile.phone}
           onChange={onChangeHandler}
         />
       </Form.Group>
-      <Button variant="primary" onClick ={saveHandler}> Save Changes </Button> 
+      <Button variant="primary" onClick ={onSaveHandler}> Save Changes </Button> 
       {" "} 
       <Button variant="primary"> Cancel </Button>
     </div>

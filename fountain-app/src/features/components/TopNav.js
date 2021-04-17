@@ -8,7 +8,7 @@ export default function TopNav(){
         <div className = "top-nav">
             <img src = "https://i.imgur.com/rvpLbNz.png" alt="fountain logo" className = "logo"/>
             <div className = "left">
-            <Link to="/" className="link">Fountain</Link>
+            <Link to="/" className="link">FOUNTAIN</Link>
             </div>
             <div className = "signup-button">
             <LoginButton/>
