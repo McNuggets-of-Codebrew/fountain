@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
+
 
 import "../../css/wish.css";
 
-export default function EditWish({ wish }) {
+export default function EditWish({ wish, show, handleClose }) {
   const [_wish, updateWish] = useState(wish);
 
   const onChangeHandler = (e) => {
@@ -20,7 +22,11 @@ export default function EditWish({ wish }) {
   };
 
   return (
-    <div className="editWish">
+    <Modal show={show} onHide={handleClose}>
+    <Modal.Header>
+      <Modal.Title>New Wish</Modal.Title>
+    </Modal.Header>
+    <Modal.Body>
       <Form>
         <Form.Group controlId="title">
           <Form.Label>Title</Form.Label>
@@ -56,14 +62,21 @@ export default function EditWish({ wish }) {
           />
         </Form.Group>
       </Form>
-      <Button variant="primary" onClick={onSaveHandler}>
-        {" "}
-        Save Changes{" "}
-      </Button>{" "}
+      </Modal.Body>
+      <Modal.Footer>
       <Button variant="primary" onClick={onResetHandler}>
         {" "}
         Reset{" "}
       </Button>
-    </div>
+      <Button variant="primary" onClick={onSaveHandler}>
+        {" "}
+        Save Changes{" "}
+      </Button>{" "}
+      <Button variant="primary" onClick={handleClose}>
+        {" "}
+        Close{" "}
+      </Button>
+      </Modal.Footer>
+      </Modal>
   );
 }
