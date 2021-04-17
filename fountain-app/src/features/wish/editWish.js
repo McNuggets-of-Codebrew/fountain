@@ -72,7 +72,7 @@ export default function EditWish({ wish, show, handleClose }) {
         {" "}
         Save Changes{" "}
       </Button>{" "}
-      <Button variant="primary" onClick={handleClose}>
+      <Button variant="secondary" onClick={handleClose}>
         {" "}
         Close{" "}
       </Button>

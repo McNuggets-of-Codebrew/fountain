@@ -71,13 +71,13 @@ export default function CreateWish({ show, handleClose }) {
           </Form>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={onSaveHandler}>
+        <Button variant="primary" onClick={onSaveHandler}>
             {" "}
             Create{" "}
           </Button>{" "}
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
         </Modal.Footer>
       </Modal>
   );
