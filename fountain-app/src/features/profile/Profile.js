@@ -3,7 +3,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import "../../css/profile.css"; 
 
-export default function Profile({ profile }) {
+export default function ProfileDetails({ profile }) {
   const [_profile, updateProfile] = useState(profile);
 
   const saveHandler = () => { 
