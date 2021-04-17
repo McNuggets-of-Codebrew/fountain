@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
+
 import "../../css/profile.css"; 
 
-export default function ProfileDetails({ profile }) {
+export default function ProfileDetails({ profile, show, handleClose }) {
   const [_profile, updateProfile] = useState(profile);
 
   const onSaveHandler = () => { 
@@ -16,7 +18,11 @@ export default function ProfileDetails({ profile }) {
 
 
   return (
-    <div className="profile">
+            <Modal show={show} onHide={handleClose}>
+        <Modal.Header>
+          <Modal.Title>New Wish</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
       <Form.Group controlId="username">
         <Form.Label>Username</Form.Label>
         <Form.Control
@@ -53,9 +59,12 @@ export default function ProfileDetails({ profile }) {
           onChange={onChangeHandler}
         />
       </Form.Group>
+      </Modal.Body>
+      <Modal.Footer>
       <Button variant="primary" onClick ={onSaveHandler}> Save Changes </Button> 
       {" "} 
-      <Button variant="primary"> Cancel </Button>
-    </div>
+      <Button variant="primary" onClick={handleClose}> Cancel </Button>
+      </Modal.Footer>
+      </Modal>
   );
 }
