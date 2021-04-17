@@ -1,0 +1,25 @@
+.wish{ 
+    width: 25%; 
+    background: white;
+    border-style: solid; 
+    margin: 2%; 
+    padding: 2%;
+}
+
+.wish .title{ 
+    text-align: center; 
+    text-transform: uppercase;
+}
+
+.wish .subtitle{ 
+    text-align: right;
+    font-size: smaller;
+}
+
+.wish .description{ 
+    text-align: center;
+}
+
+.wish .button{ 
+    text-align: center; 
+}

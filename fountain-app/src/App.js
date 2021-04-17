@@ -1,13 +1,22 @@
 import React from 'react';
-import './App.css';
-import LoginButton from "./features/components/loginButton"; 
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {publicRoutes} from "./features/common/routes"; 
 
 function App() {
-  return (
-    <div className="App">
-      <h1>Fountain</h1>
-      <LoginButton/>
-    </div>
+  return(
+    <Router>
+      <Switch>
+        {publicRoutes.map((route, index) =>
+          <Route
+            key={index}
+            restricted={false}
+            exact={route.exact}
+            path={route.path}
+            children={route.page}
+          />
+        )}
+      </Switch>
+    </Router>
   );
 }
 
