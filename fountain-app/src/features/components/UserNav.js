@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import LogoutButton from "./logoutButton.js";
+import LogoutButton from "./LogoutButton.js";
 import Button from "react-bootstrap/Button";
 import "../../css/nav.css";
 
