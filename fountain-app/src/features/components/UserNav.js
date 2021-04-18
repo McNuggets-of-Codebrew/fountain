@@ -50,11 +50,6 @@ export default function TopNav() {
           Create Wish
         </Button>
       </div>
-      <div className="right">
-        <Link to="/dashboard" className="link">
-          Home
-        </Link>
-      </div>
     </div>
   );
 }
