@@ -14,6 +14,7 @@ export default function CreateWish({ show, handleClose }) {
 
   const onSaveHandler = () => {
     //Some other API call here
+    handleClose(); 
   };
 
   return (

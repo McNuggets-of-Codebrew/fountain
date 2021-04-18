@@ -3,75 +3,58 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
-
 import "../../css/wish.css";
 
-export default function EditWish({ wish, show, handleClose }) {
-  const [_wish, updateWish] = useState(wish);
+export default function GrantWish({show, handleClose }) {
+  const [_wish, updateWish] = useState({});
 
   const onChangeHandler = (e) => {
     updateWish({ ..._wish, [e.target.id]: e.target.value });
   };
 
   const onSaveHandler = () => {
-      handleClose(); 
-    //Some other API call here
-  };
-
-  const onResetHandler = () => {
-      updateWish(wish); 
-  };
+      //Submit to backend or something idk
+    handleClose(); 
+};
 
   return (
     <Modal show={show} onHide={handleClose}>
     <Modal.Header>
-      <Modal.Title>New Wish</Modal.Title>
+      <Modal.Title>Response</Modal.Title>
     </Modal.Header>
     <Modal.Body>
       <Form>
-        <Form.Group controlId="title">
-          <Form.Label>Title</Form.Label>
+      <Form.Group controlId="Name">
+          <Form.Label>Name</Form.Label>
           <Form.Control
             type="text"
-            value={_wish.title}
+            value={_wish.name}
             onChange={onChangeHandler}
           />
         </Form.Group>
         <Form.Group controlId="title">
-          <Form.Label>Location</Form.Label>
+          <Form.Label>Email</Form.Label>
           <Form.Control
             type="text"
-            value={_wish.location}
+            value={_wish.email}
             onChange={onChangeHandler}
           />
         </Form.Group>
-        <Form.Group controlId="cost">
-          <Form.Label>Cost</Form.Label>
-          <Form.Control
-            type="text"
-            value={_wish.cost}
-            onChange={onChangeHandler}
-          />
-        </Form.Group>
-        <Form.Group controlId="description">
-          <Form.Label>Description</Form.Label>
+        <Form.Group controlId="details">
+          <Form.Label>Details</Form.Label>
           <Form.Control
             as="textarea"
             rows={5}
-            value={_wish.description}
+            value={_wish.details}
             onChange={onChangeHandler}
           />
         </Form.Group>
       </Form>
       </Modal.Body>
       <Modal.Footer>
-      <Button variant="primary" onClick={onResetHandler}>
-        {" "}
-        Reset{" "}
-      </Button>
       <Button variant="primary" onClick={onSaveHandler}>
         {" "}
-        Save Changes{" "}
+        Submit{" "}
       </Button>{" "}
       <Button variant="secondary" onClick={handleClose}>
         {" "}

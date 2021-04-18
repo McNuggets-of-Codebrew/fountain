@@ -9,6 +9,7 @@ export default function ProfileDetails({ profile, show, handleClose }) {
   const [_profile, updateProfile] = useState(profile);
 
   const onSaveHandler = () => {
+    handleClose();
     //API call to update profile details
   };
 
