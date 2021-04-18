@@ -68,6 +68,7 @@ export default function Wish({ wish }) {
               token={makePayment}
               name="Donate"
               amount={wish.cost * 100}
+              currency="AUD"
             >
               <Button variant="primary">
                 Donate ${wish.cost}

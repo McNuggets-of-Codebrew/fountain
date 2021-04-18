@@ -1,6 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import LoginButton from "./LoginButton.js"; 
+import LoginButton from "./loginButton.js"; 
 import "../../css/nav.css"; 
 
 export default function TopNav(){

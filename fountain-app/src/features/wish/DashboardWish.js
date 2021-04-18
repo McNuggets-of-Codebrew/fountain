@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../../css/wish.css";
 import Button from "react-bootstrap/Button";
-import EditWish from "./EditWish.js";
+import EditWish from "./editWish.js";
 
 export default function DashboardWish({ wish }) {
   const [showWish, setShowWish] = useState(false);

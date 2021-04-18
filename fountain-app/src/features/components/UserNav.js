@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import LogoutButton from "./LogoutButton.js";
+import LogoutButton from "./logoutButton.js";
 import Button from "react-bootstrap/Button";
 import "../../css/nav.css";
 import Profile from "../profile/Profile.js";
